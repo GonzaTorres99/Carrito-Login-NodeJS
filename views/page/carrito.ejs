@@ -1,0 +1,89 @@
+<%- include('../partials/head') %>
+
+<h1 class="title">Carrito de Compras</h1>
+<div class="cart-container">
+    <% if (carrito && carrito.length > 0) { %>
+        <div class="product-list-container">
+            <ul class="product-list">
+                <% carrito.forEach(item => { %>
+                    <li class="product-item">
+                        <div class="product-info">
+                            <img src="/images/<%= item.producto.imagen %>" class="cart-product-image">
+                            <div class="product-details">
+                                <h2><%= item.producto.nombre %></h2>
+                                <p><%= item.producto.descripcion %></p>
+                                <p>Precio unitario: $<%= item.producto.precio %></p>
+                                <p>Cantidad: <%= item.cantidad %></p>
+                                <p>Precio total: $<%= item.producto.precio * item.cantidad %></p>
+                                <button class="cart-remove-button" data-product-id="<%= item.producto._id %>">Eliminar</button>
+                            </div>
+                        </div>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total-price">
+                <h3 id="total-compra">Total de la compra: $<%= total %></h3>
+            </div>
+            <button id="finalizar-compra" class="cart-buy-button">Finalizar compra</button>
+        </div>
+    <% } else { %>
+        <div class="cart-empty-message">
+            <p>Tu carrito está vacío</p>
+        </div>
+    <% } %>
+</div>
+
+<div id="message" class="cart-message"></div>
+
+<%- include('../partials/footer') %>
+
+<script>
+    document.querySelectorAll('.cart-remove-button').forEach(button => {
+        button.addEventListener('click', function () {
+            const productId = button.getAttribute('data-product-id');
+
+            fetch('/eliminar-producto', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ productId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Respuesta del servidor:', data);
+
+                // Actualizar la lista de productos eliminando el elemento del DOM
+                button.closest('li').remove(); // Elimina el elemento de la lista
+
+                const messageDiv = document.getElementById('message');
+                messageDiv.textContent = data.message;
+                messageDiv.classList.add('show-message');
+                setTimeout(() => {
+                    messageDiv.classList.remove('show-message');
+                }, 3000);
+
+                // Actualizar el total de la compra
+                document.getElementById('total-compra').textContent = `Total de la compra: $${data.total}`;
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+
+    document.getElementById('finalizar-compra').addEventListener('click', function () {
+        fetch('/finalizar-compra', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            window.location.href = '/carrito'; // Redirige al carrito (vacío) después de finalizar la compra
+        })
+        .catch(error => console.error('Error:', error));
+    });
+</script>

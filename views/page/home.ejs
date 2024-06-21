@@ -1,0 +1,29 @@
+<%- include('../partials/head') %>
+
+<h1 class="title">Home</h1>
+
+<div class="slider-container">
+    <div class="slider">
+        <% productos.forEach((producto, index) => { %>
+            <div class="slide" style="display: <%= index === 0 ? 'block' : 'none' %>;">
+                <img src="/images/<%= producto.imagen %>" alt="<%= producto.nombre %>">
+                <div class="description"><%= producto.descripcion %></div>
+            </div>
+        <% }); %>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<%- include('../partials/footer') %>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function changeSlide(n) {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide + n + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+</script>

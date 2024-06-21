@@ -1,0 +1,182 @@
+[
+    {
+        "nombre": "Medialuna Dulce",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "medialunadulce.jpeg",
+        "descripcion": "Disfruta de nuestras deliciosas medialunas dulces, suaves y esponjosas, ideales para acompañar con un buen café.",
+        "stock": 300
+    },
+    {
+        "nombre": "Pan",
+        "precio": 1000,
+        "oferta": true,
+        "precio_oferta": 900,
+        "imagen": "pan.jpeg",
+        "descripcion": "Pan fresco y artesanal, hecho con los mejores ingredientes para tus comidas diarias.",
+        "stock": 500
+    },
+    {
+        "nombre": "Bizcochitos de grasa",
+        "precio": 1500,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "bizcochito.jpeg",
+        "descripcion": "Crujientes bizcochitos de grasa, perfectos para un snack sabroso en cualquier momento.",
+        "stock": 1000
+    },
+    {
+        "nombre": "Pan integral",
+        "precio": 400,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "panintegral.jpeg",
+        "descripcion": "Nutritivo pan integral, lleno de fibra y sabor, ideal para una dieta equilibrada.",
+        "stock": 300
+    },
+    {
+        "nombre": "Tortita Negra",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "tortitanegra.jpeg",
+        "descripcion": "Irresistibles tortitas negras, con una cobertura de azúcar que las hace únicas.",
+        "stock": 200
+    },
+    {
+        "nombre": "Palmeritas",
+        "precio": 1400,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "palmeritas.jpeg",
+        "descripcion": "Dulces palmeritas, crujientes y caramelizadas, un clásico de nuestra panadería.",
+        "stock": 400
+    },
+    {
+        "nombre": "Sanguchitos de Miga",
+        "precio": 2400,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "miga.jpeg",
+        "descripcion": "Sanguchitos de miga, frescos y variados, perfectos para tus reuniones.",
+        "stock": 350
+    },
+    {
+        "nombre": "Vigilantes",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "vigilante.jpeg",
+        "descripcion": "Vigilantes recién horneados, ideales para acompañar tus desayunos y meriendas.",
+        "stock": 200
+    },
+    {
+        "nombre": "Bolas de Fraile",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "boladefraile.jpeg",
+        "descripcion": "Suaves bolas de fraile, rellenas de dulce de leche, una delicia irresistible.",
+        "stock": 100
+    },
+    {
+        "nombre": "Milhoja",
+        "precio": 4000,
+        "oferta": true,
+        "precio_oferta": 3500,
+        "imagen": "milhoja.jpeg",
+        "descripcion": "Delicada milhoja, con capas crujientes y un delicioso relleno de crema pastelera.",
+        "stock": 50
+    },
+    {
+        "nombre": "Selva Negra",
+        "precio": 8000,
+        "oferta": true,
+        "precio_oferta": 7000,
+        "imagen": "selvanegra.jpeg",
+        "descripcion": "Exquisita torta Selva Negra, con chocolate, crema y cerezas, perfecta para cualquier ocasión especial.",
+        "stock": 10
+    },
+    {
+        "nombre": "Brownie",
+        "precio": 1000,
+        "oferta": false,
+        "precio_oferta":null,
+        "imagen": "brownie.jpeg",
+        "descripcion": "Brownie de chocolate intenso, húmedo y con nueces, ideal para los amantes del chocolate.",
+        "stock": 100
+    },
+    {
+        "nombre": "Lemon Pie",
+        "precio": 4000,
+        "oferta": true,
+        "precio_oferta": 3500,
+        "imagen": "lemonpie.jpeg",
+        "descripcion": "Refrescante lemon pie, con una base crujiente y una suave crema de limón.",
+        "stock": 20
+    },
+    {
+        "nombre": "Chipá",
+        "precio": 1500,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "chipa.jpeg",
+        "descripcion": "Tradicional chipá, bolitas de queso paraguayo, perfectas para acompañar el mate.",
+        "stock": 10
+    },
+    {
+        "nombre": "Churros",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "churros.jpeg",
+        "descripcion": "Churros dorados y crujientes, perfectos para disfrutar con chocolate caliente.",
+        "stock": 300
+    },
+    {
+        "nombre": "Medialuna salada",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "medialunasalada.jpeg",
+        "descripcion": " Medialunas saladas, esponjosas y con un toque de sal, ideales para cualquier momento del día.",
+        "stock": 600
+    },
+    {
+        "nombre": "Donas",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "dona.jpeg",
+        "descripcion": "Deliciosas donas, suaves y esponjosas, con variados glaseados y rellenos.",
+        "stock": 100
+    },
+    {
+        "nombre": "Pastelito de batata",
+        "precio": 700,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "pastelito.jpeg",
+        "descripcion": "Tradicional pastelito de batata, con una masa crujiente y un dulce relleno.",
+        "stock": 200
+    },
+    {
+        "nombre": "Pastelito de Membrillo",
+        "precio": 700,
+        "oferta": false,
+        "precio_oferta": null,
+        "imagen": "pastelito.jpeg",
+        "descripcion": "Pastelito de membrillo, con una masa dorada y un relleno dulce y jugoso.",
+        "stock": 200
+    },
+    {
+        "nombre": "Sacramento con jamon y queso",
+        "precio": 400,
+        "oferta": true,
+        "precio_oferta": 300,
+        "imagen": "sacramento.jpeg",
+        "descripcion": "Sacramento con jamón y queso, un bocadillo sabroso y satisfactorio.",
+        "stock": 100
+    }
+]
